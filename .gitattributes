@@ -1,0 +1,5 @@
+# Automatische Text-Erkennung und Normalisierung
+* text=auto
+
+# Shell-Skripte behalten LF
+*.sh text eol=lf

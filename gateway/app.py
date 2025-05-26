@@ -1,0 +1,16 @@
+from fastapi import FastAPI
+from pydantic import BaseModel
+from skills.echo_skill import echo
+
+app = FastAPI(title="Nuri Core API")
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+class EchoRequest(BaseModel):
+    text: str
+
+@app.post("/echo")
+def echo_endpoint(req: EchoRequest):
+    return {"reply": echo(req.text)}
