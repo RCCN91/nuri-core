@@ -1,4 +1,4 @@
-﻿from Nuri_sdk import tool
+﻿from nuri_sdk import tool
 
 @tool(name="echo", description="Gibt den Text unverändert zurück.")
 def echo(text: str) -> str:
