@@ -1,0 +1,17 @@
+# Git Dateien
+.git
+.gitignore
+
+# Python Müll
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Virtuelle Umgebungen (WICHTIG!)
+venv
+env
+.env
+
+# Systemdateien
+.DS_Store
